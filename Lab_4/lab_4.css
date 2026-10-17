@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+main {
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+}
+
+form input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    margin-top: 16px;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 10px 12px;
+    background-color: #e6ebf0;
+    color: #222;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+li span {
+    flex: 1;
+    min-width: 0;
+}
+
+.done {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: #287d32;
+    cursor: pointer;
+}
+
+li button {
+    flex-shrink: 0;
+    padding: 4px 6px;
+    font-family: "Segoe UI Symbol", sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    border: none;
+    background: transparent;
+    color: #c62828;
+}
+
+li button:hover {
+    opacity: 0.7;
+}
+
+li button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+.finished {
+    text-decoration: line-through;
+    color: gray;
+}
