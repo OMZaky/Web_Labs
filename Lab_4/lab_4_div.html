@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="lab_4.css">
+</head>
+<body>
+    <main>
+        <h1>Todo List</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter a task" aria-label="New task">
+            <button type="submit">Add</button>
+        </form>
+        <div id="task-list" class="task-list"></div>
+
+        <div id="task-example" class="task" hidden>
+            <input type="checkbox" class="done" aria-label="Mark task as finished">
+            <span></span>
+            <button type="button" aria-label="Delete task" title="Delete task">🗑</button>
+        </div>
+    </main>
+
+    <script src="lab_4_div.js"></script>
+</body>
+</html>

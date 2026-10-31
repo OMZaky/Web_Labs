@@ -10,9 +10,9 @@ form.addEventListener("submit", function (event) {
     if (task === "") return;
 
     const li = taskTemplate.content.firstElementChild.cloneNode(true);
-    const taskText = li.querySelector("span");
-    const doneCheckbox = li.querySelector("input");
-    const deleteButton = li.querySelector("button");
+    const doneCheckbox = li.children[0];
+    const taskText = li.children[1];
+    const deleteButton = li.children[2];
     taskText.textContent = task;
 
     doneCheckbox.addEventListener("change", function () {
